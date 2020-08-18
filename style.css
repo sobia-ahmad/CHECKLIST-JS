@@ -1,0 +1,157 @@
+body {
+  background: rgb(19, 19, 19);
+  color: rgb(255, 255, 255);
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  display: block;
+  width: 900px;
+  margin: 200px auto 0;
+}
+
+/* Main title */
+
+.container h1 {
+  color: rgb(19, 113, 150);
+  font-size: 50px;
+  align-content: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  background-color: rgba(255, 255, 255);
+  border: none;
+  color: rgb(19, 19, 19);
+  padding: 7px 10px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  float: right;
+  align-items: center;
+}
+
+button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 113, 150);
+}
+
+.delete {
+  padding: 7px 10px;
+  margin: 20px;
+}
+
+/* Other headings */
+h3,
+label[for="new-task"] {
+  color: rgb(19, 113, 150);
+  font-weight: 700;
+  font-size: 22px;
+  border-bottom: 2px solid rgb(19, 113, 150);
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 22px;
+  line-height: 18px;
+  height: 18px;
+  padding: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+input[type="text"]:focus {
+  color: rgb(19, 113, 150);
+}
+
+/* New Task */
+label[for="new-task"] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+  float: left;
+  width: 550px;
+}
+p > button:hover {
+  color: rgb(255, 255, 255);
+}
+
+.add-new-task:hover {
+  background-color: rgb(19, 150, 19);
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 22px;
+  line-height: 40px;
+  width: 520px;
+  padding: 0 0 0 11px;
+}
+li > input[type="text"] {
+  width: 520px;
+}
+li > .delete:hover {
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: rgb(255, 255, 255);
+}
+
+.label-completed {
+  color: rgb(19, 150, 19);
+}
+
+/* Edit Task */
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
