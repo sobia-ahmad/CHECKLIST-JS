@@ -1,0 +1,53 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>TO DO LIST:</title>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="container">
+        <h1>MY TO DO LIST</h1>
+        <p>
+          <label for="new-task">Add Task</label>
+          <input id="new-task" type="text" />
+          <button class="add-new-task">Add</button>
+        </p>
+
+        <h3>To do:</h3>
+        <ul id="incomplete-tasks">
+          <li>
+            <input type="checkbox" />
+            <label>Do my laundry</label>
+            <input type="text" />
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </li>
+          <li class="editMode">
+            <input type="checkbox" />
+            <label>Cut the grass</label>
+            <input type="text" value="Cut the grass" />
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </li>
+        </ul>
+
+        <h3 class="label-completed">Completed</h3>
+        <ul id="completed-tasks">
+          <li>
+            <input type="checkbox" checked="" />
+            <label>Go cycling</label>
+            <input type="text" />
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </li>
+        </ul>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </html>
+</html>
